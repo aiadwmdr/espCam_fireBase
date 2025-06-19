@@ -2,6 +2,10 @@ cara pindah2 col dengan justify-content-center
 navigasi nempel diatas pke fix-top, kemudian di jumbotron tambah padding
 
 sliding:
-app.js, index.html, style.css
+app.js, img, index.html, style.css
+
+auth:
+admin.html, app.js, index.html, myscript.js, style.css
 
 bismillah:
+img, index.html, style.css
