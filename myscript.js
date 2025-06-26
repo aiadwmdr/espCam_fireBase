@@ -2,7 +2,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
 // import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
-import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+import { getDatabase, set, ref, update, delete } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
 // import { getDatabase } from "firebase/database";
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -10,13 +10,13 @@ import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasej
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAcKXxJwjhm9s7hkcb4tStxz8j_18q1Ua4",
-  authDomain: "loginweb-d5158.firebaseapp.com",
-  databaseURL: "https://loginweb-d5158-default-rtdb.firebaseio.com",
-  projectId: "loginweb-d5158",
-  storageBucket: "loginweb-d5158.appspot.com",
-  messagingSenderId: "977139409443",
-  appId: "1:977139409443:web:c6dbce940932fec4c3c796"
+  apiKey: "AIzaSyBwzXNT_jYjFTFDDsu3Av7CYMVuZbMhKT4",
+  authDomain: "webapps-6943d.firebaseapp.com",
+  databaseURL: "https://webapps-6943d-default-rtdb.firebaseio.com",
+  projectId: "webapps-6943d",
+  storageBucket: "webapps-6943d.firebasestorage.app",
+  messagingSenderId: "629085566327",
+  appId: "1:629085566327:web:bcbb0afe0a542a98eadd72"
 };
 
 // Initialize Firebase
@@ -72,8 +72,9 @@ signinButton.addEventListener("click", (e) => {
       })
         .then(() => {
           // Data saved successfully!
-          //   alert("user telah sukses login");
-          location.href = "http://127.0.0.1:5500/auth_firebase_cdn/admin.html";
+          // alert("user telah sukses login");
+          // location.href = "http://127.0.0.1:5500/auth_firebase_cdn/admin.html";
+          location.href = "https://aiadwmdr.github.io/espCam_fireBase/admin.html";
         })
         .catch((error) => {
           //the write failed
